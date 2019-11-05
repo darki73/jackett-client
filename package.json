@@ -1,0 +1,43 @@
+{
+    "name": "jackett-client",
+    "version": "1.0.0",
+    "description": "Jackett Node.js client implementation",
+    "repository": "https://github.com/darki73/jackett-client",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "author": "Zhivolupov Ivan <ivan.zhivolupov@freedomcore.ru>",
+    "license": "MIT",
+    "private": false,
+    "scripts": {
+        "build": "rimraf dist && tsc -p tsconfig.build.json",
+        "dev": "ts-node-dev --respawn --transpileOnly src/index.ts",
+        "watch": "nodemon",
+        "typecheck": "tsc -p tsconfig.build.json --noEmit"
+    },
+    "devDependencies": {
+        "@types/node": "^12.12.5",
+        "@typescript-eslint/eslint-plugin": "^2.6.1",
+        "@typescript-eslint/parser": "^2.6.1",
+        "eslint": "^6.6.0",
+        "eslint-config-airbnb": "^18.0.1",
+        "eslint-config-prettier": "^6.5.0",
+        "eslint-plugin-prettier": "^3.1.1",
+        "nodemon": "^1.19.4",
+        "prettier": "^1.18.2",
+        "rimraf": "^3.0.0",
+        "ts-node": "^8.4.1",
+        "ts-node-dev": "^1.0.0-pre.44",
+        "tslint": "^5.20.0",
+        "typescript": "^3.6.4"
+    },
+    "dependencies": {
+        "@types/request": "^2.48.3",
+        "@types/request-promise-native": "^1.0.17",
+        "request": "^2.88.0",
+        "request-promise-native": "^1.0.7",
+        "xml-js": "^1.6.11"
+    }
+}
