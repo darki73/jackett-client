@@ -5,5 +5,4 @@ npm-debug.log
 Untitled*
 .idea
 .env
-dist
 *.tmp.ts

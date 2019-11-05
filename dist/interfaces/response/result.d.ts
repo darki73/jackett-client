@@ -1,0 +1,29 @@
+export interface ResponseResult {
+    FirstSeen: string;
+    Tracker: string;
+    TrackerId: string;
+    CategoryDesc: string;
+    Title: string;
+    Guid: string;
+    Link: string;
+    Comments: string;
+    PublishDate: string;
+    Category: number[];
+    Size: bigint;
+    Files: any;
+    Grabs: number;
+    Description: any;
+    RageID: any;
+    TVDBId: any;
+    Imdb: any;
+    Seeders: number;
+    Peers: number;
+    BannerUrl?: string;
+    InfoHash?: string;
+    MagnetUri?: string;
+    MinimumRatio: number;
+    MinimumSeedTime: number;
+    DownloadVolumeFactor: number;
+    UploadVolumeFactor: number;
+    Gain: number;
+}
